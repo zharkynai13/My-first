@@ -19,15 +19,16 @@
                 <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">ДОМОЙ</a></li>
-                    <li><a href="#">О НАС</a></li>
-                    <li><a href="#">КУРСЫ</a></li>
-                    <li><a href="#">БЛОГ</a></li>
-                    <li><a href="#">КОНТАКТЫ</a></li>
+                    <li><a href="#text1">О НАС</a></li>
+                    <li><a href="#courses">КУРСЫ</a></li>
+                    <li><a href="#campuses">КАМПУСЫ</a></li>
+                    <li><a href="#facts">ФАКУЛЬТУТЫ</a></li>
+                    <li><a href="#contack">КОНТАКТЫ</a></li>
                 </ul>
             </div>
             <i class="fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
-        <div class="text-box">
+        <div class="text-box" id="text1">
             <h1>Наш университет</h1>
             <p>Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Океана составитель
                 знаках продолжил предложения<br> текста диких раз инициал которой своих, заглавных эта предупреждал
@@ -39,7 +40,7 @@
 
     <!-------Course-------->
 
-    <section class="course">
+    <section class="course" id="courses">
         <h2>Оффлайн курсы</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quisquam odio, omnis provident deleniti
             repellat officiis adipisci aliquid, recusandae temporibus dolor molestias animi repudiandae?</p>
@@ -65,7 +66,7 @@
         </div>
     </section>
     <!-----Campus------->
-    <section class="Campus">
+    <section class="Campus" id="campuses">
         <h2>Наш Главный Корпус</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quisquam odio, omnis provident deleniti
             repellat officiis adipisci aliquid, recusandae temporibus dolor molestias animi repudiandae?</p>
@@ -91,7 +92,7 @@
         </div>
     </section>
     <!-------Факультеты-------->
-    <section class="fackultets">
+    <section class="fackultets" id="facts">
         <h2>Наши Факультеты</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quisquam odio, omnis provident deleniti
             repellat officiis adipisci aliquid, recusandae temporibus dolor molestias animi repudiandae?</p>
@@ -123,7 +124,7 @@
     </section>
 
     <!-----testimonials--------->
-    <section class="testimonials">
+    <section class="testimonials" id="testim">
         <h2>Отзывы От Наших Студентов</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quisquam odio, omnis provident
             deleniti
@@ -136,6 +137,8 @@
                         temporibus error eligendi. Illo, dolor dicta! Sapiente, error autem! Facilis accusantium tempore
                         dolor unde impedit dicta neque ut!</p>
                     <h3>Selena Gomez</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -155,6 +158,7 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star-o"></i>
             </div>
         </div>
@@ -169,17 +173,19 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star-half-o"></i>
             </div>
         </div>
     </section>
     <!--------Call toAction--------->
-    <section class="cta">
+    <section class="cta" id="CTA">
         <h2>Наши Онлайн курсы <br> для Всех</h2>
         <a href="" class="hero-btn">Contackt Us</a>
     </section>
     <!-----------footer---------->
-    <section class="footer">
+    <section class="footer" id="contack">
         <h4>О Нас</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus fugiat impedit necessitatibus odio
             expedita voluptatibus <br> perferendis quisquam maxime, iste corrupti, nemo dolorem corporis eligendi
@@ -187,9 +193,10 @@
             numquam autem non architecto magnam.</p>
         <div class="icons">
 
-            <i class="fa fa-fecebook"></i>
+            <i class="fa fa-facebook"></i>
             <i class="fa fa-twitter"></i>
             <i class="fa fa-instagram"></i>
+            <i class="fa fa-youtube"></i>
             <i class="fa fa-linkedin"></i>
 
         </div>
@@ -197,9 +204,11 @@
     <!-------------JS------------>
     <script>
         var navLinks = document.getElementById("navLinks");
+
         function showMenu() {
             navLinks.style.right = "0"
         }
+
         function hideMenu() {
             navLinks.style.right = "-200px"
         }
